@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = Object.fromEntries(formData);
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxzTaLi7PEB4hwGFp5fBdV9sbYFlEV9z-FARv_ZJ1IMDkr6VIADlqzoUJYqSgonD0rUww/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxAHiSDMFFOMBRfpVRYI5ruPKbqeJOq_EudZPv81N1JH7BTWyXsAbQ48XLgi0Au56J1jQ/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ module: "huevos", ...data }),
