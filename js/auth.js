@@ -1,6 +1,13 @@
 function login() {
-  const role = document.getElementById("role").value;
+  const selected = document.querySelector('input[name="role"]:checked');
   const pin = document.getElementById("pin").value;
+
+  if (!selected) {
+    alert("Por favor selecciona un rol.");
+    return;
+  }
+
+  const role = selected.value;
 
   const validPins = {
     campo: "1111",
