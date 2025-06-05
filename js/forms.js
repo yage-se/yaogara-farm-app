@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     formData.append("module", "huevos");
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxAHiSDMFFOMBRfpVRYI5ruPKbqeJOq_EudZPv81N1JH7BTWyXsAbQ48XLgi0Au56J1jQ/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbyniucm_2kcLT3Tfhw2vw7jTySP-b9iwHGhBDuYuh-IfwyPk1dMLMktTzggjkI0VOl0HQ/exec", {
         method: "POST",
         body: formData,
       });
